@@ -20,3 +20,10 @@ Expo is a platform/toolchain built on top of React Native that handles all that 
 </table>
 
 In react native, you don't use div or p tag like you use in react. It's different in React Native. Here, you add a View which is like a box and then whatever text you want to add there you wrap it up with 'Text'. These View and Text come from react-native.
+
+### Stylesheet
+In react, you would add styles in a separate css file and select elements with classes. But in React Native, you do it this way:
+<img src="assets/rn-stylesheet-comp.png" width="350"><br>
+<img src="assets/rn-stylesheet.png" width="350">
+
+### Event Handling
