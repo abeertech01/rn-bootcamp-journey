@@ -9,4 +9,4 @@ real-world applications.
 
 **Started = 11th Aug, 2026**<br>
 **Total Course Duration = 28:22:43**<br>
-**Completed = 00:00:00**
+**Completed = 00:18:54**
