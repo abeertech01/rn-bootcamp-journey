@@ -11,3 +11,12 @@ Expo is a platform/toolchain built on top of React Native that handles all that 
 - OTA updates: push JS updates to users without a new app store release
 
 ## Comparison with React
+### Component Structure
+<table>
+  <tr>
+    <td><img src="assets/react-comp.png" width="450"></td>
+    <td><img src="assets/rn-comp.png" width="450"></td>
+  </tr>
+</table>
+
+In react native, you don't use div or p tag like you use in react. It's different in React Native. Here, you add a View which is like a box and then whatever text you want to add there you wrap it up with 'Text'. These View and Text come from react-native.
