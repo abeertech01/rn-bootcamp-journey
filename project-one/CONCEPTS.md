@@ -14,8 +14,8 @@ Expo is a platform/toolchain built on top of React Native that handles all that 
 ### Component Structure
 <table>
   <tr>
-    <td><img src="assets/react-comp.png" width="450"></td>
-    <td><img src="assets/rn-comp.png" width="450"></td>
+    <td><img src="assets/react-comp.png" width="380"></td>
+    <td><img src="assets/rn-comp.png" width="380"></td>
   </tr>
 </table>
 
@@ -27,3 +27,7 @@ In react, you would add styles in a separate css file and select elements with c
 <img src="assets/rn-stylesheet.png" width="350">
 
 ### Event Handling
+<img src="assets/event-handling.png" width="350"><br>
+React Native's event handling isn't how you do with a button in react.
+
+These are some stuffs to show a comparison between react and react native.
