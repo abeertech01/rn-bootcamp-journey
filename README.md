@@ -7,6 +7,12 @@ The bootcamp consists of 6 projects and progressively
 moves from React Native fundamentals to complex,
 real-world applications.
 
+## Brief
 **Started = 11th Aug, 2026**<br>
 **Total Course Duration = 28:22:43**<br>
 **Completed = 00:18:54**
+
+## Progress Timeline
+1. 11th Aug, 2026 = 00:00:00
+2. 18th Aug, 2026 = 00:07:59
+3. 19th Aug, 2026 = 00:18:54
