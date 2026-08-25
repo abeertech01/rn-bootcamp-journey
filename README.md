@@ -10,7 +10,7 @@ real-world applications.
 ## Brief
 **Started = 11th Aug, 2026**<br>
 **Total Course Duration = 28:22:43**<br>
-**Completed so far = 00:18:54**
+**Completed so far = 00:23:49**
 
 ## Progress Timeline
 Progress per day - the day I worked on RN.
