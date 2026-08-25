@@ -31,3 +31,12 @@ In react, you would add styles in a separate css file and select elements with c
 React Native's event handling isn't how you do with a button in react.
 
 These are some stuffs to show a comparison between react and react native.
+## Expo App Boilerplate
+To install an expo app, run this command: `npx create-expo-app@latest`<br>
+Project structure and components are pretty similar to React app.<br>
+To reset the project, run: `npm run reset-project`
+### How to run an expo application
+There are two ways to run an expo app: Expo go app on mobile phone and Installing a simulator.<br>
+In the case of running the app on a simulator, requires you to download either android studio (if you're on windows) or xcode (if you're on macOS)<br>
+When you run `npx expo` on terminal, it will get you several options. One of them is QR code, which will get you run the app on expo go app on your phone.<br>
+But there we have other options as well, to run the app on a simulator.
