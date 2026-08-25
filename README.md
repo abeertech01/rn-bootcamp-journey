@@ -7,6 +7,9 @@ The bootcamp consists of 6 projects and progressively
 moves from React Native fundamentals to complex,
 real-world applications.
 
+## Project One
+Project one contains BASIC_RN_CONCEPTS file where every basic stuff has been explained.
+
 ## Brief
 **Started = 11th Aug, 2026**<br>
 **Total Course Duration = 28:22:43**<br>
