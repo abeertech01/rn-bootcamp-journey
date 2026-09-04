@@ -40,3 +40,46 @@ There are two ways to run an expo app: Expo go app on mobile phone and Installin
 In the case of running the app on a simulator, requires you to download either android studio (if you're on windows) or xcode (if you're on macOS)<br>
 When you run `npx expo` on terminal, it will get you several options. One of them is QR code, which will get you run the app on expo go app on your phone.<br>
 But there we have other options as well, to run the app on a simulator.
+### Walking through the files and folder structure
+Everything starts under the app folder that comes up with expo.<br>
+It uses file based routing, which basically means every new file is a different screen.<br>
+It has a navigation on top of it which is file based routing.<br>
+`_layout` is a special file where the application starts.<br><br>
+Styles can be added in two different ways. Writing it separately is actually shown above already. But you can write styles right in the View as well which looks like this:
+```tsx
+import { Text, View } from "react-native"
+
+export default function Index() {
+  return (
+    <View style={{
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  }}>
+      <Text>Edit src/app/index.tsx to edit this screen</Text>
+    </View>
+  )
+}
+```
+Again showing how it looks when you separate the styles:
+```tsx
+import { Text, View, StyleSheet } from "react-native"
+
+export default function Index() {
+  return (
+    <View style={styles.container}>
+      <Text>Edit src/app/index.tsx to edit this screen</Text>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+})
+```
+<br>
+When you write a text outside the `<Text></Text>` component, it leaves an error, instead showing the text.
