@@ -51,4 +51,45 @@ export default function RootLayout() {
 
 ## Tab Navigator
 
-A tab navigator in react native is a navigation pattern that creates a tab bar (usually at the bottom of the screen) allowing users to switch between screens.
+A tab navigator in react native is a navigation pattern that creates a tab bar (usually at the bottom of the screen) allowing users to switch between screens. <br>
+
+add a folder `(tabs)` in the 'app' directory. There you add what tab options you want. Then add a layout file `_layout.tsx` in that folder.<br>
+Now you write each tab according to your need and logic. And `_layout.tsx` must look like this:
+
+```tsx
+import { Ionicons } from "@react-native-vector-icons/ionicons/static"
+import { Tabs } from "expo-router"
+
+const TabsLayout = () => {
+  return (
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "red",
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Todos",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="flash-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tabs>
+  )
+}
+
+export default TabsLayout
+```
+
+<img src="assets/tabs.png" width="350"><br>
