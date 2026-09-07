@@ -48,3 +48,7 @@ export default function RootLayout() {
 ```
 
 <img src="assets/tab-title.png" width="350"><br>
+
+## Tab Navigator
+
+A tab navigator in react native is a navigation pattern that creates a tab bar (usually at the bottom of the screen) allowing users to switch between screens.
