@@ -15,7 +15,7 @@ Project one contains BASIC_RN_CONCEPTS file where every basic stuff has been exp
 
 **Started = 11th Aug, 2026**<br>
 **Total Course Duration = 28:22:43**<br>
-**Completed so far = 00:41:40**
+**Completed so far = 00:45:11**
 
 ## Progress Timeline
 
@@ -30,3 +30,4 @@ Progress per day - the day I worked on RN.
 7. 5th Sep, 2026 = 00:34:56
 8. 6th Sep, 2026 = 00:39:34
 9. 7th Sep, 2026 = 00:41:40
+10. 8th Sep, 2026 = 00:45:11
