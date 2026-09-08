@@ -54,7 +54,8 @@ export default function RootLayout() {
 A tab navigator in react native is a navigation pattern that creates a tab bar (usually at the bottom of the screen) allowing users to switch between screens. <br>
 
 add a folder `(tabs)` in the 'app' directory. There you add what tab options you want. Then add a layout file `_layout.tsx` in that folder.<br>
-Now you write each tab according to your need and logic. And `_layout.tsx` must look like this:
+Now you write each tab according to your need and logic. And `_layout.tsx` must look like the following code.<br>
+The thing needs to count is the name of the `<Tabs.Screen` opening tag has to match their actual file name.
 
 ```tsx
 import { Ionicons } from "@react-native-vector-icons/ionicons/static"
@@ -93,3 +94,21 @@ export default TabsLayout
 ```
 
 <img src="assets/tabs.png" width="350"><br>
+
+### Ionicons
+
+`@expo/vector-icons` package is being deprecated. Expo doesn't recommend to use this package anymore. Instead it recommends `@react-native-vector-icons/ionicons`.
+
+## expo dev client
+
+Generally when you run `npx expo` and then press `i`, it will open the ios simulator where it will open the expo go app. But the `expo go` app doesn't support the ionicons and there are other things that can make it feel like the `expo go` app is obsolete.<br>
+The solution is to install the `expo-dev-client` package. Then if we run the `npx expo start` command, it will let you open the simulator. This is how the app will open by default when you run the simulator.<br><br>
+
+If we don't want headers, we can get rid of that. There are two levels of headers: view level and the stack level.<br>
+We can get rid of them by negating the `headerShown` property of screenOptions. It's doable both in the layout file and the tab. for example:
+
+```tsx
+<Stack screenOptions={{ headerShown: false }}>
+  <Stack.Screen name="(tabs)" options={{ title: "Home" }} />
+</Stack>
+```
