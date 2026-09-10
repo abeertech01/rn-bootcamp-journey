@@ -112,3 +112,37 @@ We can get rid of them by negating the `headerShown` property of screenOptions. 
   <Stack.Screen name="(tabs)" options={{ title: "Home" }} />
 </Stack>
 ```
+
+## AsyncStorage - Storage on a user's device
+
+AsyncStorage is React Native's simple, promise-based API for persisting small bits of data on a user's device. Think of it as the mobile-app equivalent of the browser's localStorage, but asynchronous and cross-platform.
+
+```tsx
+import AsyncStorage from "@react-native-async-storage/async-storage"
+......
+...
+
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  useEffect(() => {
+    AsyncStorage.getItem("darkMode").then((value) => {
+      if (value) setIsDarkMode(JSON.parse(value))
+    })
+  }, [])
+
+  const toggleDarkMode = async () => {
+    const newMode = !isDarkMode
+    setIsDarkMode(newMode)
+    await AsyncStorage.setItem("darkMode", JSON.stringify(newMode))
+  }
+
+  const colors = isDarkMode ? darkColors : lightColors
+
+  return (
+    <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode, colors }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+```
