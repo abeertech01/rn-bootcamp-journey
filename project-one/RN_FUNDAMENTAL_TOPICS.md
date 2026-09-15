@@ -146,3 +146,5 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   )
 }
 ```
+
+This project is using convex as database. So, there is a dedicated md file for convex use notes.
