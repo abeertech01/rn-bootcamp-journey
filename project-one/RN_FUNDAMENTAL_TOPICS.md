@@ -148,3 +148,32 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 ```
 
 This project is using convex as database. So, there is a dedicated md file for convex use notes.
+
+## FlatList Component
+
+Instead of writing
+
+```tsx
+{
+  todos?.map((todo) => <Text key={todo._id}>{todo.text}</Text>)
+}
+```
+
+write the following for better performance
+
+```tsx
+<FlatList
+  data={todos}
+  renderItem={renderTodoItem}
+  keyExtractor={(item) => item._id}
+  style={homeStyles.todoList}
+  contentContainerStyle={homeStyles.todoListContent}
+  ListEmptyComponent={<EmptyState />} // when it's 0 items
+  showsVerticalScrollIndicator={false}
+/>
+```
+
+`FlatList` provides better performance because it loads items not all at once, rather as user scrolls down. <br>
+But this doesn't have in the regular mapping. because regular mapping loads all the items at once. This hampers performance.
+
+Although, using regular map can be okay many times, especially when you don't have to load 100s of items.

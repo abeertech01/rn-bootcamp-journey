@@ -139,3 +139,11 @@ export default function Index() {
   )
 }
 ```
+
+## Table Record Type for TypeScript
+
+```tsx
+import { Doc } from "@/convex/_generated/dataModel"
+
+type Todo = Doc<"todos">
+```
