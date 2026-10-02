@@ -177,3 +177,13 @@ write the following for better performance
 But this doesn't have in the regular mapping. because regular mapping loads all the items at once. This hampers performance.
 
 Although, using regular map can be okay many times, especially when you don't have to load 100s of items.
+
+## ScrollView Component
+
+ScrollView renders all its children at once. It's simple and works well for a small, fixed amount of content, like a settings page, a form, or a profile screen.
+
+### What are the differences between ScrollView and FlatList ?
+
+FlatList only renders the items currently on screen, plus a few nearby, and recycles them as you scroll. That makes it the right choice for long or dynamic lists, like a feed, chat messages, or API data. It also gives you built-in extras like onEndReached for infinite scroll, pull-to-refresh, and separators.
+
+Rule of thumb: use ScrollView if you can count the items on your fingers and they won't grow. Use FlatList if the data comes from an array (especially one that can get long), because a ScrollView with hundreds of items will hurt memory and performance.
